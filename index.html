@@ -1,5 +1,109 @@
-git config user.name "kandaimai"
-git config user.email "daimai.kan@gmail.com"
-
-print('hi')
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PソースPokeDex</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .pokedex {
+            background-color: #ff0000;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+        .pokedex h1 {
+            text-align: center;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 2px solid #fff;
+            padding-bottom: 10px;
+        }
+        .region {
+            background-color: #cc0000;
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .region h2 {
+            color: #fff;
+            margin: 0 0 10px 0;
+            text-transform: uppercase;
+        }
+        .region p {
+            margin: 0;
+            line-height: 1.6;
+        }
+        .region ul {
+            list-style-type: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+        }
+        .region li {
+            background-color: #fff;
+            color: #cc0000;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: bold;
+        }
+        @media (max-width: 600px) {
+            .pokedex {
+                padding: 10px;
+            }
+            .region ul {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="pokedex">
+        <h1>PokéDex</h1>
+        <div class="region" id="kanto">
+            <h2>Kanto</h2>
+            <p>The Kanto region, the first introduced in the Pokémon series, features the original 151 Pokémon. Known for its diverse ecosystems, it includes cities like Pallet Town and Celadon City.</p>
+            <ul>
+                <li>Bulbasaur</li>
+                <li>Charmander</li>
+                <li>Squirtle</li>
+                <li>Pikachu</li>
+                <li>Mewtwo</li>
+            </ul>
+        </div>
+        <div class="region" id="johto">
+            <h2>Johto</h2>
+            <p>Johto, west of Kanto, introduces 100 new Pokémon. Its cultural blend of tradition and modernity is seen in places like Ecruteak City and the Whirl Islands.</p>
+            <ul>
+                <li>Chikorita</li>
+                <li>Cyndaquil</li>
+                <li>Totodile</li>
+                <li>Togepi</li>
+                <li>Tyranitar</li>
+            </ul>
+        </div>
+        <div class="region" id="hoenn">
+            <h2>Hoenn</h2>
+            <p>Hoenn, a tropical region, adds 135 Pokémon. Its vast oceans and volcanic landscapes define areas like Slateport City and Mt. Chimney.</p>
+            <ul>
+                <li>Treecko</li>
+                <li>Torchic</li>
+                <li>Mudkip</li>
+                <li>Absol</li>
+                <li>Rayquaza</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
